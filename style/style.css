@@ -1,0 +1,112 @@
+html,body{
+    box-sizing: border-box;
+    background-color:#efefef;
+    margin: 0%;
+}
+
+.grid{
+    display: grid;
+    grid-template-rows: 1.2fr 4fr;
+    height: 2250px;
+}
+
+#page1{
+    display: flex;
+    flex: 1 1;
+    background-color: aqua;
+}
+#nav {
+    height: 55px;
+    width: 100%;
+    padding:0px;
+    margin:0px;
+    background-color: #fefefe;
+    list-style:none;
+    position: fixed;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+#flexnave{
+    position: absolute;
+    right: 10px;
+    display: flex;
+    top: 17px;
+    flex : 1 1 1;
+    padding-right: 12px;
+}
+
+#over::after {
+    content: url("down.png");
+    position: relative;
+    left: 5px;
+    top: 3px;
+}
+
+div[name="barItem"]{
+    padding-right: 20px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"
+}
+
+#pag1{
+    display: grid;
+    grid-template-rows: 55px 9fr;
+}
+
+.gridAHalf{
+    display: grid;
+    grid-template-columns: 1fr 2px 1fr;
+    background-color:#fafafa;
+}
+.gridAThird{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color:#fafafa;
+}
+div[name="parte2"]{
+    display: grid;
+    grid-template-rows: 2.5fr 3fr;
+}
+
+.boxContent{
+    text-align: right;
+    max-width: 683px;
+    padding: 30px;
+}
+
+.barraCentral{
+    position: relative;
+    background-color: #808080;
+    border-radius: 50px;
+    height: 150px;
+    top: 20px;
+}
+img[name="logo"]{
+    position: relative;
+    top: 35px;
+}
+
+div[name='caixa']{
+    /* border: 1px solid yellow; */
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+
+}
+
+/* pagina 2 5 quadros de texto
+ e imagem */
+
+div[name="esq2"]{
+
+}
+
+div[name="dir2"]{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 40px;
+}
+.grid-half{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <link rel="stylesheet" href="./style/style.css">
+  <title>BimNomads</title>
+</head>
+<body>
+  <div id="app" class="grid">
+    <div id="pag1">
+      <div name="parte1">
+        <!-- Barra de navegação -->
+        <nav id="nav">
+          <img v-if="iconBar == 1 "src="./imagens/logo.png"  width="72px" height="43.2px" style="padding: 5px;transition-duration: 1s;" alt="logoBimnomads">
+          <div id="flexnave">
+            <div name="barItem" ><span id="over">registro</span></div>
+            <div name="barItem"><span id="over">sobre</span></div>
+            <div name="barItem"><span id="over">buscar</span></div>
+          </div>
+        </nav>
+      </div>
+      <!-- Conteudo pagina 1 -->
+      <div name="parte2">
+          <div class="gridAHalf">
+            <!-- parte esquerda -->
+            <div class="boxContent">
+              <img name="logo" src="./imagens/logo.png" width="100px" height="60px" alt="Logo Bim.Nomads">
+            </div>
+            <div class="barraCentral"></div>
+            <!-- Parte direita -->
+            <div name="linha"class="boxContent" style="position:relative; text-align: left;max-width: 260px;top: 42px;font-family:sans-serif;font-size: 14px;">
+              Plataforma online de <span style="font-weight:550;">participação</span> no 
+              desenvolvimento de <span style="font-weight:550;">projetos</span> e 
+              acompanhamento de <span style="font-weight:550;">obras</span> públicas
+            </div>
+
+          </div>
+          <div class="gridAThird">
+            <div name="caixa" style="text-align: center;">
+              <div style="text-align: center;"><span style="font-size: 20px;color: #ff9900;font-family: Arial, Helvetica, sans-serif;"> Participe</span></div>
+              <div style="text-align: center; ">Aqui vai o texto que precisa ser adicionado</div>
+            </div>
+            <div name="caixa"style="text-align: center">
+              <div><span style="font-size: 20px;color: #ff9900;font-family: Arial, Helvetica, sans-serif;"> Saiba Mais</span></div>
+              <div>Aqui vai o texto que precisa ser adicionado</div>
+            </div>
+            <div name="caixa"style="text-align: center;">
+              <div><span style="font-size: 20px;color: #ff9900;font-family: Arial, Helvetica, sans-serif;"> Discuta</span></div>
+              <div>Aqui vai o texto que precisa ser adicionado</div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- Fim da pagina 1 -->
+    <!-- Comeco da pagina 2 -->
+    
+    <div id="pag2" style="background-color: #efefef;">
+      <div class="gridAHalf" style="background-color: #efefef;">
+        
+        <div name="esq2" class="boxContent">
+          <div id="timeline"></div>
+        </div>
+        <!-- Div criada para fazer a linha central -->
+        <div class="barraCentral" style="height: 1685px;"></div>
+        
+        <!-- Lado direito da pag2 -->
+        <div name="dir2" class="boxContent" style="text-align: left;">
+          
+          <!-- caixa -->
+          <div class="grid-half" style="text-align: left;">
+            <img src="./imagens/Untitled.png" alt="teste">
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+               sed do eiusmod tempor incididunt ut 
+               labore et dolore magna aliqua. Ut enim ad minim veniam, 
+               quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+               ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+               voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+               Excepteur sint occaecat cupidatat non proident, 
+               sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+          </div>
+          <!-- caixa -->
+          <div class="grid-half" style="text-align: left;">
+            <img src="./imagens/Untitled.png" alt="teste">
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut 
+              labore et dolore magna aliqua. Ut enim ad minim veniam, 
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, 
+              sunt in culpa qui officia deserunt mollit anim id est laborum</div>  
+          </div>
+          <!-- caixa -->
+          <div class="grid-half" style="text-align: left;">
+            <img src="./imagens/Untitled.png" alt="teste">
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut 
+              labore et dolore magna aliqua. Ut enim ad minim veniam, 
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, 
+              sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+          </div>
+          <!-- caixa -->
+          <div class="grid-half" style="text-align: left;">
+            <img src="./imagens/Untitled.png" alt="teste">
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut 
+              labore et dolore magna aliqua. Ut enim ad minim veniam, 
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, 
+              sunt in culpa qui officia deserunt mollit anim id est laborum</div> 
+          </div>
+          <!-- caixa -->
+          <div class="grid-half"style="text-align: left;">
+            <img src="./imagens/Untitled.png" alt="teste">
+            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut 
+              labore et dolore magna aliqua. Ut enim ad minim veniam, 
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex 
+              ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, 
+              sunt in culpa qui officia deserunt mollit anim id est laborum</div> 
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+  </div>
+
+</body>
+    <script src="./js/main.js"></script>
+    <script src="./main_2.js"></script>
+    <link rel="stylesheet" href="timeline.css">
+</html>

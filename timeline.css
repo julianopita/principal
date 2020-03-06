@@ -1,0 +1,64 @@
+html{
+    background-color: rgb(33,40,48);
+}
+
+
+#bloco{
+    display: grid;
+    width: 400px;
+    grid-template-columns: 0.2fr 1fr 1fr;
+    padding-left: 60px;
+    padding-top: 10px;
+}
+#mes{
+    font: 20px Arial,sans-serif;
+    color:black;
+    padding: 10px;
+    text-align: center;
+}
+#data{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+
+    background: #fff;
+    border: 2px solid #666;
+    color: #666;
+    text-align: center;
+    font: 11px Arial, sans-serif;
+    position: relative;
+    top: 20px;
+}
+#evento{
+    padding: 8px;
+    color: gray;
+    text-align: left;
+}
+#bloco_direita{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 300px;
+    height: 50px;
+    background-color:white;
+}
+
+#linha_horizontal{
+    background-color: black;
+    position: relative;
+    top: 18px;
+    height: 1px;
+    position: relative;
+    top: 35px;
+}
+
+
+
+/* 
+#imagem{
+    width: 10px;
+    height: 10px;
+    position: relative;
+    z-index: 5;
+    background-image: url("./imagens/template_casa.png");
+} */
