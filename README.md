@@ -1,6 +1,4 @@
-# BIMSurfer v3 beta
+# BimNomads
 
-The all new BIM Surfer. Completly rebuild from scratch.  This version only works with WebGL 2.0 
-It introduces 3D tiles and is focussed on high performance.
-
-There is no official release yet, but feel free to contribute, test and evaluate this version.
+A plataforma gerenciada nesse repositório é o resultado do trabalho do Grupo de Pesquisa Nomads, do IAU - USP.
+O projeto consiste em um ambiente capaz de gerar debates sobre várias etapas do processo de Construção, fazendo assim uma interação maior entre atores técnicos e não-técnicos.
