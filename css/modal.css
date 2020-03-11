@@ -1,49 +1,37 @@
-.overlay {
-    background-color: rgba(0,0,0,0.8);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    &--hidden {
-    display: none;
-  }
-  z-inde
-}
+/* The Modal (background) */
 .modal {
-  position: fixed;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
   top: 0;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  transition: all .3s ease;
-  &--hidden {
-    display: none;
-  }
-  &__contents {
-    background-color: #fff;
-    padding: 2rem 4rem;
-    input[type=email] {
-      width: 100%;
-      padding: .5rem;
-    }
-    #submit{
-      width: 100%;
-      padding: .5rem;
-      background-color: $primary;
-      color: #fff;
-      border: none;
-      transition: all .3s ease;
-      &:hover {
-        background-color: $primary-darker;
-      }
-    }
-  }
-  &__close-bar {
-    cursor: pointer;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: -2rem;
-    margin-top: -1rem;
-  }
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
