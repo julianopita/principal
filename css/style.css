@@ -1,61 +1,112 @@
-.flexbox{
-    display: flex;
-}
-.flex{
-    display: flexbox;
-    /* grid-template-columns: 70vw 30vw; */
-    /* grid-template-rows: 85vh 15vh; */
-}
-.frame{
-    border: 0px solid #000;
-    border-radius: 1px solid #000;
-    transition: 0.3s;
-    padding: 20px;
-    background-color: #ffffff;
+html,body{
+    box-sizing: border-box;
+    background-color:#efefef;
+    margin: 0%;
 }
 
-.left{
-    background-color: lightgray;
-}
-.right{
-    background-color: lightgray;
-}
-
-.down{
-    background-color: lightgray;
-}
-.grid_canvas{
+.grid{
     display: grid;
-    grid-template-columns: 15vw 59vw ;
-    z-index: -30;
-}
-.canvas_main{
-    border: 0px solid #000;
-    border-radius: 1px solid #000;
-    background-color: white;
-    z-index: -30;
-}
-.canvas_aux1{
-    border: 0px solid #000;
-    border-radius: 1px solid #000;
-    background-color: white;
-    z-index: -30;
-}
-.canvas_aux2{
-    border: 0px solid #000;
-    border-radius: 1px solid #000;
-    background-color: white;
-    z-index: -30;
+    grid-template-rows: 1.2fr 4fr;
+    height: 2250px;
 }
 
-.resize_left{
-    position: relative;
+#page1{
+    display: flex;
+    flex: 1 1;
+    background-color: aqua;
 }
-.resize_right{
+#nav {
+    height: 55px;
+    width: 100%;
+    padding:0px;
+    margin:0px;
+    background-color: #fefefe;
+    list-style:none;
+    position: fixed;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+#flexnave{
     position: absolute;
+    right: 10px;
+    display: flex;
+    top: 17px;
+    flex : 1 1 1;
+    padding-right: 12px;
 }
-.resize_down{
+
+#over::after {
+    content: url("down.png");
     position: relative;
-    left: 95vw;
-    z-index: 1000;
+    left: 5px;
+    top: 3px;
 }
+
+div[name="barItem"]{
+    padding-right: 20px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"
+}
+
+#pag1{
+    display: grid;
+    grid-template-rows: 55px 9fr;
+}
+
+.gridAHalf{
+    display: grid;
+    grid-template-columns: 1fr 2px 1fr;
+    background-color:#fafafa;
+}
+.gridAThird{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color:#fafafa;
+}
+div[name="parte2"]{
+    display: grid;
+    grid-template-rows: 2.5fr 3fr;
+}
+
+.boxContent{
+    text-align: right;
+    max-width: 683px;
+    padding: 30px;
+}
+
+.barraCentral{
+    position: relative;
+    background-color: #808080;
+    border-radius: 50px;
+    height: 150px;
+    top: 20px;
+}
+img[name="logo"]{
+    position: relative;
+    top: 35px;
+}
+
+div[name='caixa']{
+    /* border: 1px solid yellow; */
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+
+}
+
+/* pagina 2 5 quadros de texto
+ e imagem */
+
+div[name="esq2"]{
+
+}
+
+div[name="dir2"]{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 40px;
+}
+.grid-half{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
