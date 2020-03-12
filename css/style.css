@@ -111,3 +111,16 @@ div[name="dir2"]{
     grid-template-columns: 1fr 1fr;
 }
 
+.box-image {
+  margin: auto;  /* centered */
+  height:300px;
+  padding: 5px;
+  width: 300px; /* Could be more or less, depending on screen size */
+}
+
+.box-text {
+  margin: auto;  /* centered */
+  padding: 20px;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
