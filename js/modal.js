@@ -1,10 +1,9 @@
-var b = modal_id();
-
+// Get the modal
 function modal_id(obj)
 {
-  var a = obj.id;
+  var b = obj.id;
   console.log (b);
-};
+
 
   var btn =  document.getElementById(b);
 
@@ -12,7 +11,7 @@ function modal_id(obj)
   var modal = document.getElementById("cont_" + b);
 
   // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close_" + b)[0];
+  var span = document.getElementById("close_" + b);
 
     // When the user clicks on the button, open the modal
     btn.onclick = function() {
@@ -25,8 +24,9 @@ function modal_id(obj)
     }
 
     // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-  }
+   // window.onclick = function(event) {
+     // if (event.target == modal) {
+      //  modal.style.display = "none";
+    //  }
+  //}
+};
