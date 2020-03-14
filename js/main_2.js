@@ -69,36 +69,56 @@ function arrays(text){
             
             var bloco_direita = document.createElement('div');
             bloco_direita.setAttribute('id','bloco_direita')
-            var img = document.createElement('img');
-            img.setAttribute('id','imagem');
-            img.src = "./imagens/template_casa.png";
-            img.width = 80;
-            img.height = 50;
             var evento = document.createElement('div');
             evento.setAttribute('id','evento');
 
             if (relevancia == 0) {
-                // // texto_3
+                
+                // imagem por relevância
+                var img = document.createElement('img');
+                img.setAttribute('id','imagem');
+                img.src = "./imagens/template" + relevancia + ".jpg";
+                img.width = 50;
+                img.height = 50;
+
+                // texto_3
                 texto_3 = document.createTextNode(text[meses[i]][dias[j]][0]);
                 evento.appendChild(texto_3);
                 bloco_direita.appendChild(img);
-                bloco_direita.setAttribute('class','bloco_direita p0');
+                bloco_direita.setAttribute('class','bloco_direita');
                 bloco_direita.appendChild(evento);
                 div_bloco.appendChild(bloco_direita);
+
             } else if (relevancia == 1) {
+
+                // imagem por relevância
+                var img = document.createElement('img');
+                img.setAttribute('id','imagem');
+                img.src = "./imagens/template" + relevancia + ".jpg";
+                img.width = 50;
+                img.height = 50;
+
                 // // texto_3
                 texto_3 = document.createTextNode(text[meses[i]][dias[j]][1]);
                 evento.appendChild(texto_3);
                 bloco_direita.appendChild(img);
-                bloco_direita.setAttribute('class','bloco_direita p1');
+                bloco_direita.setAttribute('class','bloco_direita');
                 bloco_direita.appendChild(evento);
                 div_bloco.appendChild(bloco_direita);
             } else {
+
+                // imagem por relevância
+                var img = document.createElement('img');
+                img.setAttribute('id','imagem');
+                img.src = "./imagens/template" + relevancia + ".jpg";
+                img.width = 50;
+                img.height = 50;
+
                 // // texto_3
                 texto_3 = document.createTextNode(text[meses[i]][dias[j]][2]);
                 evento.appendChild(texto_3);
                 bloco_direita.appendChild(img);
-                bloco_direita.setAttribute('class','bloco_direita p2');
+                bloco_direita.setAttribute('class','bloco_direita');
                 bloco_direita.appendChild(evento);
                 div_bloco.appendChild(bloco_direita);
             };
