@@ -54,6 +54,26 @@ div[name="barItem"]{
     grid-template-rows: 55px 9fr;
 }
 
+.info{
+    font-size: 16px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-left:20px;
+    padding-right: 20px;
+}
+    
+    .title{
+        font-size: 20px;
+        color: #ff9900;
+        font-weight: bold;
+    }
+
+    em {
+        color: blue;
+        font-style: normal;
+       }
+
 .gridAHalf{
     display: grid;
     grid-template-columns: 1fr 2px 1fr;
@@ -113,14 +133,21 @@ div[name="dir2"]{
 
 .box-image {
   margin: auto;  /* centered */
-  height:300px;
+  height:250px;
   padding: 5px;
-  width: 300px; /* Could be more or less, depending on screen size */
+  width: 250px; /* Could be more or less, depending on screen size */
 }
 
 .box-text {
   margin: auto;  /* centered */
   padding: 20px;
   width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.footer {
+    background: white;
+    font-size: 10px;
+    color: #666;
+    text-align: center;
 }
 
