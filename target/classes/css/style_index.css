@@ -1,0 +1,61 @@
+.flexbox{
+    display: flex;
+}
+.flex{
+    display: flexbox;
+    /* grid-template-columns: 70vw 30vw; */
+    /* grid-template-rows: 85vh 15vh; */
+}
+.frame{
+    border: 1px solid #000;
+    border-radius: 1px solid #000;
+    transition: 0.3s;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.left{
+    background-color: dimgray;
+}
+.right{
+    background-color: fuchsia;
+}
+
+.down{
+    background-color: darkgreen;
+}
+.grid_canvas{
+    display: grid;
+    grid-template-columns: 15vw 59vw ;
+    z-index: -30;
+}
+.canvas_main{
+    border: 1px solid #000;
+    border-radius: 1px solid #000;
+    background-color: aqua;
+    z-index: -30;
+}
+.canvas_aux1{
+    border: 1px solid #000;
+    border-radius: 1px solid #000;
+    background-color: brown;
+    z-index: -30;
+}
+.canvas_aux2{
+    border: 1px solid #000;
+    border-radius: 1px solid #000;
+    background-color: chocolate;
+    z-index: -30;
+}
+
+.resize_left{
+    position: relative;
+}
+.resize_right{
+    position: absolute;
+}
+.resize_down{
+    position: relative;
+    left: 95vw;
+    z-index: 1000;
+}

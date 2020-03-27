@@ -1,6 +1,7 @@
 {
-    "Abril" : 
-    {
+    "2019" :{
+        "Abril" : 
+        {
         "13" :
         {
             "0" : "Uso da plataforma com os alunos \n"
@@ -13,48 +14,51 @@
         {
             "1" : "Discussão dos resultados com o grupo"
         }
-    },
-    "Maio" : 
-    {
-        "13" :
-        {
-            "0" : "Uso da plataforma com a FDE \n"
         },
-        "20" :
+        "Maio" : 
         {
-            "1" : "Discussão dos resultados com o grupo \n"
-        }
-    },
-    "Junho" : 
-    {
-        "2" :
-        {
-            "2" : "Compilação e publicação dos resultados \n"
-        }
-    },
-    "Julho" : 
-    {
-        "12" :
-        {
-            "2" : "Análise dos resultados \n"
-        }
-    },
-    "Agosto" : 
-    {
-        "10" :
-        {
-            "0" : "Revisão das análises \n"
+            "13" :
+            {
+                "0" : "Uso da plataforma com a FDE \n"
+            },
+            "20" :
+            {
+                "1" : "Discussão dos resultados com o grupo \n"
+            }
         },
-        "17" :
+        "Junho" : 
         {
-            "2" : "Publicação dos resultados \n"
+            "2" :
+            {
+                "2" : "Compilação e publicação dos resultados \n"
+            }
+        },
+        "Julho" : 
+        {
+            "12" :
+            {
+                "2" : "Análise dos resultados \n"
+            }
+        },
+        "Agosto" : 
+        {
+            "10" :
+            {
+                "0" : "Revisão das análises \n"
+            },
+            "17" :
+            {
+                "2" : "Publicação dos resultados \n"
+            }
+        },
+        "Setembro" : 
+        {
+            "30" :
+            {
+                "1" : "Apresentação pública \n"
+            }
         }
     },
-    "Setembro" : 
-    {
-        "30" :
-        {
-            "1" : "Apresentação pública \n"
-        }
-    }
+    "2020" : 2
 }
+    

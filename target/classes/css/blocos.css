@@ -1,0 +1,10 @@
+.box_image {
+	height: 300px;
+	width: 300px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.box_text {
+
+}
