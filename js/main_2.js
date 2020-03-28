@@ -98,12 +98,12 @@ function dia(text,i,j,anos,meses){
             // imagem por relevância
             var img = document.createElement('img');
             img.setAttribute('id','imagem');
-            img.src = "./imagens/template" + relevancia + ".jpg";
+            img.src = "./imagens/template" + k + ".jpg";
             img.width = 50;
             img.height = 50;
 
             // texto_3
-            texto_3 = document.createTextNode(Object.values(rel[0]));
+            texto_3 = document.createTextNode(Object.values(rel[k]));
             evento.appendChild(texto_3);
             bloco_direita.appendChild(img);
             bloco_direita.setAttribute('class','bloco_direita');
@@ -115,12 +115,12 @@ function dia(text,i,j,anos,meses){
             // imagem por relevância
             var img = document.createElement('img');
             img.setAttribute('id','imagem');
-            img.src = "./imagens/template" + relevancia + ".jpg";
+            img.src = "./imagens/template" + k + ".jpg";
             img.width = 50;
             img.height = 50;
 
             // // texto_3
-            texto_3 = document.createTextNode(Object.values(rel[0]));
+            texto_3 = document.createTextNode(Object.values(rel[k]));
             evento.appendChild(texto_3);
             bloco_direita.appendChild(img);
             bloco_direita.setAttribute('class','bloco_direita');
@@ -131,13 +131,13 @@ function dia(text,i,j,anos,meses){
             // imagem por relevância
             var img = document.createElement('img');
             img.setAttribute('id','imagem');
-            img.src = "./imagens/template" + relevancia + ".jpg";
+            img.src = "./imagens/template" + k + ".jpg";
             img.width = 50;
             img.height = 50;
 
             // // texto_3
             //essa parte eu n entendi
-            texto_3 = document.createTextNode(Object.values(rel[0]));
+            texto_3 = document.createTextNode(Object.values(rel[k]));
             evento.appendChild(texto_3);
             bloco_direita.appendChild(img);
             bloco_direita.setAttribute('class','bloco_direita');
