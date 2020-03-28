@@ -23,25 +23,34 @@ function ano(text){
     anos = Object.keys(text)
     // alert("oi")
     for(let i = 0; i < anos.length;i++){
-        mes(text,i,anos);
-    }
-}
-//manipulação de mês
-function mes(text,i,anos){
-    var meses = Object.keys(text[anos[i]]);
-    alert(meses);
-    for(let i =0;i< meses.length;i++){
-        //Cria nó e div, adiciona nó a div e seta atributos
-        //depois adiciona a timeline
-        var texto = document.createTextNode(meses[i]);
+        var texto = document.createTextNode(anos[i]);
         var divNova = document.createElement('div');
         divNova.appendChild(texto);
         divNova.setAttribute('id','mes');
         timeline.appendChild(divNova);
+        mes(text,i,anos);
     }
 }
-function dia(text,j,anos,meses){
-    
+//adiciona os meses de forma dinamica
+function mes(text,i,anos){
+    var meses = Object.keys(text[anos[i]]);
+    alert(meses);
+    for(let j =0;j< meses.length;j++){
+        //Cria nó e div, adiciona nó a div e seta atributos
+        //depois adiciona a timeline
+        var texto = document.createTextNode(meses[j]);
+        var divNova = document.createElement('div');
+        divNova.appendChild(texto);
+        divNova.setAttribute('id','mes');
+        timeline.appendChild(divNova);
+
+        //adiciona os dias de forma dinâmica
+        dia(text,i,j,anos,meses);
+    }
+}
+function dia(text,i,j,anos,meses){
+    var dias = Object.keys(text[anos[i]][meses[j]]);
+    alert(dias)
     for(let j = 0;j < dias.length;j++)
     {
         var div_bloco = document.createElement('div');
