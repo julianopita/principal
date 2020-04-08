@@ -1,7 +1,5 @@
 var xhttp = new XMLHttpRequest();
 var timeline = document.getElementById('timeline');
-
-
 // faz uma requesição do arquivo timeline
 function createTimeLine(){
     xhttp.onreadystatechange = function(){
@@ -15,13 +13,19 @@ function createTimeLine(){
     xhttp.send();
 }
 
-
+function addLink(div,link){
+    if(link != ""){
+        $(div).click(()=>{
+            window.open(link);
+        })
+    }
+}
 
 
 //manipulação geral dia mês e ano
 function ano(text){
     anos = Object.keys(text)
-    // alert("oi")
+    // alert(link)
     for(let i = 0; i < anos.length;i++){
         var texto = document.createTextNode(anos[i]);
         var divNova = document.createElement('div');
@@ -51,15 +55,29 @@ function mes(text,i,anos){
 function dia(text,i,j,anos,meses){
     
     var dias = Object.keys(text[anos[i]][meses[j]]);
-    var rel = Object.values(text[anos[0]][meses[j]]);
+    var rel = Object.values(text[anos[i]][meses[j]]);
+
     for(let k = 0;k < dias.length;k++)
     {
         relevancia = rel[k];
         var div_bloco = document.createElement('div');
-        div_bloco.setAttribute('id','bloco');   
+        div_bloco.setAttribute('id','bloco'); 
         //texto_2 é o dia do evento
         var data = document.createElement('div');
         timeline.appendChild(div_bloco);
+        
+        var link = Object.values(rel[k])[1];
+        if(link == undefined){
+            link = "";
+        }
+
+
+
+
+
+
+
+        //
         if (relevancia == 0) {
             // // data
             data.setAttribute('id','data');
@@ -103,8 +121,9 @@ function dia(text,i,j,anos,meses){
             img.height = 50;
 
             // texto_3
-            texto_3 = document.createTextNode(Object.values(rel[k]));
+            texto_3 = document.createTextNode(Object.values(rel[k])[0]);
             evento.appendChild(texto_3);
+            addLink(evento,link);
             bloco_direita.appendChild(img);
             bloco_direita.setAttribute('class','bloco_direita');
             bloco_direita.appendChild(evento);
@@ -120,8 +139,9 @@ function dia(text,i,j,anos,meses){
             img.height = 50;
 
             // // texto_3
-            texto_3 = document.createTextNode(Object.values(rel[k]));
+            texto_3 = document.createTextNode(Object.values(rel[k])[0]);
             evento.appendChild(texto_3);
+            addLink(evento,link);
             bloco_direita.appendChild(img);
             bloco_direita.setAttribute('class','bloco_direita');
             bloco_direita.appendChild(evento);
@@ -137,8 +157,9 @@ function dia(text,i,j,anos,meses){
 
             // // texto_3
             //essa parte eu n entendi
-            texto_3 = document.createTextNode(Object.values(rel[k]));
+            texto_3 = document.createTextNode(Object.values(rel[k])[0]);
             evento.appendChild(texto_3);
+            addLink(evento,link);
             bloco_direita.appendChild(img);
             bloco_direita.setAttribute('class','bloco_direita');
             bloco_direita.appendChild(evento);
@@ -159,110 +180,5 @@ function dia(text,i,j,anos,meses){
 
     }
 }
-
-// function arrays(text){
-//     var relevancia;
-  
-            
-//             //relevancia
-            // relevancia = Object.keys(text[meses[i]][dias[j]]);
-            // if (relevancia == 0) {
-            //     // // data
-            //     data.setAttribute('id','data');
-            //     data.setAttribute('class','data p0');
-            //     var texto_2 = document.createTextNode(dias[j]);
-            //     data.appendChild(texto_2);
-            //     div_bloco.appendChild(data);
-            // } else if (relevancia == 1) {
-            //     // // data
-            //     data.setAttribute('id','data');
-            //     data.setAttribute('class','data p1');
-            //     var texto_2 = document.createTextNode(dias[j]);
-            //     data.appendChild(texto_2);
-            //     div_bloco.appendChild(data);
-            // } else {
-            //     // // data
-            //     data.setAttribute('id','data');
-            //     data.setAttribute('class','data p2');
-            //     var texto_2 = document.createTextNode(dias[j]);
-            //     data.appendChild(texto_2);
-            //     div_bloco.appendChild(data);
-            // };
-                        
-            // var linha_horizontal = document.createElement('div');
-            // linha_horizontal.setAttribute('id','linha_horizontal');
-            // div_bloco.appendChild(linha_horizontal)
-
-            
-            // var bloco_direita = document.createElement('div');
-            // bloco_direita.setAttribute('id','bloco_direita')
-            // var evento = document.createElement('div');
-            // evento.setAttribute('id','evento');
-
-            // if (relevancia == 0) {
-                
-            //     // imagem por relevância
-            //     var img = document.createElement('img');
-            //     img.setAttribute('id','imagem');
-            //     img.src = "./imagens/template" + relevancia + ".jpg";
-            //     img.width = 50;
-            //     img.height = 50;
-
-            //     // texto_3
-            //     texto_3 = document.createTextNode(text[meses[i]][dias[j]][0]);
-            //     evento.appendChild(texto_3);
-            //     bloco_direita.appendChild(img);
-            //     bloco_direita.setAttribute('class','bloco_direita');
-            //     bloco_direita.appendChild(evento);
-            //     div_bloco.appendChild(bloco_direita);
-
-            // } else if (relevancia == 1) {
-
-            //     // imagem por relevância
-            //     var img = document.createElement('img');
-            //     img.setAttribute('id','imagem');
-            //     img.src = "./imagens/template" + relevancia + ".jpg";
-            //     img.width = 50;
-            //     img.height = 50;
-
-            //     // // texto_3
-            //     texto_3 = document.createTextNode(text[meses[i]][dias[j]][1]);
-            //     evento.appendChild(texto_3);
-            //     bloco_direita.appendChild(img);
-            //     bloco_direita.setAttribute('class','bloco_direita');
-            //     bloco_direita.appendChild(evento);
-            //     div_bloco.appendChild(bloco_direita);
-            // } else {
-
-            //     // imagem por relevância
-            //     var img = document.createElement('img');
-            //     img.setAttribute('id','imagem');
-            //     img.src = "./imagens/template" + relevancia + ".jpg";
-            //     img.width = 50;
-            //     img.height = 50;
-
-            //     // // texto_3
-            //     texto_3 = document.createTextNode(text[meses[i]][dias[j]][2]);
-            //     evento.appendChild(texto_3);
-            //     bloco_direita.appendChild(img);
-            //     bloco_direita.setAttribute('class','bloco_direita');
-            //     bloco_direita.appendChild(evento);
-            //     div_bloco.appendChild(bloco_direita);
-            // };
-        
-
-
-
-
-//             // console.log(dias[j]);
-//             // console.log(text[meses[i]][dias[j]][0]);
-            
-
-
-            
-//         }
-//     }
-// }
-
 
 createTimeLine();
