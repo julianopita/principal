@@ -15,6 +15,7 @@ function createTimeLine(){
 
 function addLink(div,link){
     if(link != ""){
+        div.style.cursor = 'pointer';
         $(div).click(()=>{
             window.open(link);
         })
