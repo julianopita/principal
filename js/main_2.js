@@ -76,7 +76,7 @@ function dia(text,i,j,anos,meses){
 
         //  formatação por relevância
         data.setAttribute('id','data');
-        data.setAttribute('class','data p'+relevancia);
+        data.setAttribute('class','data p' + relevancia);
         var texto_2 = document.createTextNode(dias[k]);
         data.appendChild(texto_2);
         div_bloco.appendChild(data);
