@@ -5,11 +5,12 @@
         "13" :
         {
             "0" : "Uso da plataforma com os alunos \n",
-            "link" : "https://www.google.com/"
+            "link" : "http://localhost/bimnomads2/phases/phase1.html"
         },
         "15" :
         {
-            "0" : "Uso da plataforma com os profissionais da educação  \n"
+            "0" : "Uso da plataforma com os profissionais da educação  \n",
+            "link" : "http://localhost/bimnomads2/phases/phase1.html"
         },
         "18" :
         {
@@ -20,7 +21,8 @@
         {
             "13" :
             {
-                "0" : "Uso da plataforma com a FDE \n"
+                "0" : "Uso da plataforma com a FDE \n",
+                "link" : "http://localhost/bimnomads2/phases/phase1.html"
             },
             "20" :
             {

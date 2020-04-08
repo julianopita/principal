@@ -58,9 +58,11 @@ function dia(text,i,j,anos,meses){
     var dias = Object.keys(text[anos[i]][meses[j]]);
     var rel = Object.values(text[anos[i]][meses[j]]);
 
+    
+
     for(let k = 0;k < dias.length;k++)
     {
-        relevancia = rel[k];
+        var relevancia = Object.keys(rel[k])[0];
         var div_bloco = document.createElement('div');
         div_bloco.setAttribute('id','bloco'); 
         //texto_2 é o dia do evento
@@ -72,35 +74,13 @@ function dia(text,i,j,anos,meses){
             link = "";
         }
 
-
-
-
-
-
-
-        //
-        if (relevancia == 0) {
-            // // data
-            data.setAttribute('id','data');
-            data.setAttribute('class','data p0');
-            var texto_2 = document.createTextNode(dias[k]);
-            data.appendChild(texto_2);
-            div_bloco.appendChild(data);
-        } else if (relevancia == 1) {
-            // // data
-            data.setAttribute('id','data');
-            data.setAttribute('class','data p1');
-            var texto_2 = document.createTextNode(dias[k]);
-            data.appendChild(texto_2);
-            div_bloco.appendChild(data);
-        } else {
-            // // data
-            data.setAttribute('id','data');
-            data.setAttribute('class','data p2');
-            var texto_2 = document.createTextNode(dias[k]);
-            data.appendChild(texto_2);
-            div_bloco.appendChild(data);
-        };
+        //  formatação por relevância
+        data.setAttribute('id','data');
+        data.setAttribute('class','data p'+relevancia);
+        var texto_2 = document.createTextNode(dias[k]);
+        data.appendChild(texto_2);
+        div_bloco.appendChild(data);
+       
                     
         var linha_horizontal = document.createElement('div');
         linha_horizontal.setAttribute('id','linha_horizontal');
@@ -112,65 +92,24 @@ function dia(text,i,j,anos,meses){
         var evento = document.createElement('div');
         evento.setAttribute('id','evento');
 
-        if (relevancia == 0) {
-            
-            // imagem por relevância
-            var img = document.createElement('img');
-            img.setAttribute('id','imagem');
-            img.src = "./imagens/template" + k + ".jpg";
-            img.width = 50;
-            img.height = 50;
+                    
+        // imagem por relevância
+        var img = document.createElement('img');
+        img.setAttribute('id','imagem');
+        img.src = "./imagens/template" + relevancia + ".jpg";
+        img.width = 50;
+        img.height = 50;
 
-            // texto_3
-            texto_3 = document.createTextNode(Object.values(rel[k])[0]);
-            evento.appendChild(texto_3);
-            addLink(evento,link);
-            bloco_direita.appendChild(img);
-            bloco_direita.setAttribute('class','bloco_direita');
-            bloco_direita.appendChild(evento);
-            div_bloco.appendChild(bloco_direita);
+        // texto_3
+        texto_3 = document.createTextNode(Object.values(rel[k])[0]);
+        evento.appendChild(texto_3);
+        addLink(evento,link);
+        bloco_direita.appendChild(img);
+        bloco_direita.setAttribute('class','bloco_direita');
+        bloco_direita.appendChild(evento);
+        div_bloco.appendChild(bloco_direita);
 
-        } else if (relevancia == 1) {
-
-            // imagem por relevância
-            var img = document.createElement('img');
-            img.setAttribute('id','imagem');
-            img.src = "./imagens/template" + k + ".jpg";
-            img.width = 50;
-            img.height = 50;
-
-            // // texto_3
-            texto_3 = document.createTextNode(Object.values(rel[k])[0]);
-            evento.appendChild(texto_3);
-            addLink(evento,link);
-            bloco_direita.appendChild(img);
-            bloco_direita.setAttribute('class','bloco_direita');
-            bloco_direita.appendChild(evento);
-            div_bloco.appendChild(bloco_direita);
-        } else {
-
-            // imagem por relevância
-            var img = document.createElement('img');
-            img.setAttribute('id','imagem');
-            img.src = "./imagens/template" + k + ".jpg";
-            img.width = 50;
-            img.height = 50;
-
-            // // texto_3
-            //essa parte eu n entendi
-            texto_3 = document.createTextNode(Object.values(rel[k])[0]);
-            evento.appendChild(texto_3);
-            addLink(evento,link);
-            bloco_direita.appendChild(img);
-            bloco_direita.setAttribute('class','bloco_direita');
-            bloco_direita.appendChild(evento);
-            div_bloco.appendChild(bloco_direita);
-        };
-
-
-
-
-
+       
 
 
 
