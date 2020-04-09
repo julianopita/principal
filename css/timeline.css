@@ -12,11 +12,11 @@ html{
     margin-top: 10px;
 }
 #ano{
-    font: 25px Arial,sans-serif;
+    font: 28px Arial,sans-serif;
     font-weight: bold;
     color:red;
     padding: 15px;
-    margin-left: 50px;
+    margin-left: 25px;
     text-align: left;
 }
 #mes{
