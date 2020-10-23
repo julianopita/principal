@@ -151,3 +151,41 @@ div[name="dir2"]{
     text-align: center;
 }
 
+.barra-navegacao{
+    background-color: #8b8b8b;
+    height: 40px;
+    margin-right: 0px;
+    margin-left: 0px;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+}
+    .item-navegacao{        
+        position: relative;
+        float: left;
+        left: 90%;
+        transform: translate(-50%,0);
+        margin-left:0px;
+      
+    }
+    
+    a{
+        font-family: -apple-system, BlinkMacSystemFont, 'Arial', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        color: white;
+        text-decoration: none;
+    }
+    /*.logo{
+      align-content: left;
+      justify-content: center;          
+      background-color: white;
+      height: 40px; 
+      margin-left: 0px;
+      margin-top: 0px;        
+    }*/
+    .img-barra{
+      height: 40px;
+      padding: 0px;
+      background-color: white;
+    }

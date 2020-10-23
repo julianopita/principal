@@ -96,9 +96,9 @@ div[name='caixa']{
 /* pagina 2 5 quadros de texto
  e imagem */
 
-div[name="esq2"]{
+/*div[name="esq2"]{
 
-}
+}*/
 
 div[name="dir2"]{
     display: grid;
@@ -110,4 +110,46 @@ div[name="dir2"]{
     grid-template-columns: 1fr 1fr;
     align-items: center;
 }
+
+.barra-navegacao{
+    background-color: #8b8b8b;
+    height: 40px;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+}
+    .item-navegacao{        
+        position: relative;
+        float: left;
+        left: 80%;
+        transform: translate(-50%,0);
+        margin-left:10px;
+    }
+    div{
+        margin-right: 10px;
+        margin-left: 10px;
+        align-content: center;
+        display: inline;
+    }
+    a{
+        font-family: -apple-system, BlinkMacSystemFont, 'Arial', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        font-weight: 300;
+        color: white;
+        text-decoration: none;
+    }
+    .logo{
+      align-content: left;
+      justify-content: center;          
+      background-color: white;
+      height: 40px; 
+      margin-left: 0px;
+      margin-top: 0px;        
+    }
+    img{
+      height: 40px;
+      padding: 0px;
+      background-color: white;
+    }
+
 

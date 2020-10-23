@@ -4,25 +4,25 @@
         {
         "17" :
             {
-            "0" : "Uso da plataforma com os alunos \n",
-            "link" : "http://www.nomads.usp.br/bimnomads/phases/index.html#/plataforma"
+            "0" : "Primeira rodada de participação. Clique aqui para acessar. \n",
+            "link" : "http://www.nomads.usp.br/bimnomads/phases/index.html"
             },
         "24" :
             {
-            "0" : "Uso da plataforma com os profissionais da educação  \n",
-            "link" : "http://www.nomads.usp.br/bimnomads/phases/index.html#/plataforma"
+            "0" : "Técnicos avaliam as dúvidas e propostas. Acesso restrito.  \n",
+            "link" : "http://www.nomads.usp.br/bimnomads/phases/index.html"
             }        
         },
         "Dezembro" : 
         {
             "1" :
             {
-                "0" : "Uso da plataforma com a FDE \n",
-                "link" : "http://www.nomads.usp.br/bimnomads/phases/index.html#/plataforma"
+                "0" : "Segunda rodada de paticipação. Clique aqui para acessar. \n",
+                "link" : "http://www.nomads.usp.br/bimnomads/phases/index.html"
             },
             "8" :
             {
-                "1" : "Discussão dos resultados com o grupo \n"
+                "1" : "Discussão dos resultados com o grupo com técnicos e gestores. \n"
             },        
             
             "15" :
