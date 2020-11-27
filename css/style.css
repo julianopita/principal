@@ -2,19 +2,20 @@ html,body{
     box-sizing: border-box;
     background-color:#efefef;
     margin: 0%;
-    font-family: Arial
+    font-family: Arial;
+    
 }
 
 .grid{
     display: grid;
-    grid-template-rows: 1.2fr 4fr;
-    height: 2250px;
+    grid-template-rows: 1.2fr 8fr;    
+    height: 2250px;    
 }
-
 #page1{
     display: flex;
     flex: 1 1;
     background-color: aqua;
+   
 }
 #nav {
     height: 55px;
@@ -55,13 +56,15 @@ div[name="barItem"]{
 }
 
 .info{
-    font-size: 16px;
+    font-size: 14px;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    padding-top: 15px;
     padding-left:20px;
     padding-right: 20px;
-}
+    height: 10px;
+    }
     
     .title{
         font-size: 20px;
@@ -88,6 +91,14 @@ div[name="parte2"]{
     display: grid;
     grid-template-rows: 2.5fr 3fr;
 }
+.titulo{
+    font: 28px Arial,sans-serif;
+    background-color: #efefef; 
+    font-weight: bold;
+    color:red;
+    padding: 15px; 
+    height: 50px;
+}
 
 .boxContent{
     text-align: right;
@@ -100,7 +111,7 @@ div[name="parte2"]{
     background-color: #808080;
     border-radius: 50px;
     height: 150px;
-    top: 20px;
+    top: -70px;
 }
 img[name="logo"]{
     position: relative;
@@ -117,14 +128,13 @@ div[name='caixa']{
 /* pagina 2 5 quadros de texto
  e imagem */
 
-div[name="esq2"]{
 
-}
 
 div[name="dir2"]{
+    padding: 5px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    row-gap: 40px;
+    row-gap: 30px;
 }
 .grid-half{
     display: grid;
@@ -136,6 +146,7 @@ div[name="dir2"]{
   height:250px;
   padding: 5px;
   width: 250px; /* Could be more or less, depending on screen size */
+  cursor: pointer;
 }
 
 .box-text {
@@ -171,9 +182,9 @@ div[name="dir2"]{
     
     a{
         font-family: -apple-system, BlinkMacSystemFont, 'Arial', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 20px;
-        font-weight: 300;
-        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        color: orange;
         text-decoration: none;
     }
     /*.logo{

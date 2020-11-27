@@ -2,32 +2,28 @@
     "2020" :{
         "Novembro" : 
         {
-        "17" :
+        "30" :
             {
-            "0" : "Primeira rodada de participação. Clique aqui para acessar. \n",
+            "0" : "Primeira rodada de testes. Clique aqui para acessar. \n",
             "link" : "http://www.nomads.usp.br/bimnomads/phases/index.html"
-            },
-        "24" :
-            {
-            "0" : "Técnicos avaliam as dúvidas e propostas. Acesso restrito.  \n",
-            "link" : "http://www.nomads.usp.br/bimnomads/phases/index.html"
-            }        
+            }            
         },
         "Dezembro" : 
         {
-            "1" :
+            "7" :
             {
-                "0" : "Segunda rodada de paticipação. Clique aqui para acessar. \n",
-                "link" : "http://www.nomads.usp.br/bimnomads/phases/index.html"
+                "1" : "Equipe técnica corrige e aprimora a plataforma. \n",
+                "link" : "http://www.nomads.usp.br/bimnomads/phases/#/plataforma"
             },
-            "8" :
+            "14" :
             {
-                "1" : "Discussão dos resultados com o grupo com técnicos e gestores. \n"
+                "0" : "Segunda rodada de testes. Clique aqui para acessar. \n",
+                "link" : "http://www.nomads.usp.br/bimnomads/phases/index.html"
             },        
             
-            "15" :
+            "21" :
             {
-                "2" : "Compilação e publicação dos resultados \n"
+                "2" : "Discussão coletiva dos resultados com o grupo \n"
             },      
        
             "22" :
@@ -36,20 +32,24 @@
             }
         }
     },
-    "2021" :{
-
-        "Janeiro" : 
+    "Legenda" :{
+        "" : 
         {
-            "6" :
+        "1" :
             {
-                "0" : "Revisão das análises \n"
+            "0" : "Participação de todos na discussão \n"            
             },
-            "13" :
+        "2" :
             {
-                "2" : "Publicação dos resultados \n"
+            "1" : "Momentos de resposta da equipe técnica \n"
+            },
+        "3" :
+            {
+            "2" : "Ações presenciais \n"
             }
-        }        
+        }
     }
 }
+    
 
     

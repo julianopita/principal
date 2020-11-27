@@ -1,0 +1,55 @@
+{
+    "2020" :{
+        "Novembro" : 
+        {
+        "17" :
+            {
+            "0" : "Primeira rodada de participação. Clique aqui para acessar. \n",
+            "link" : "http://www.nomads.usp.br/bimnomads/phases/index.html"
+            },
+        "24" :
+            {
+            "0" : "Técnicos avaliam as dúvidas e propostas. Acesso restrito.  \n",
+            "link" : "http://www.nomads.usp.br/bimnomads/phases/index.html"
+            }        
+        },
+        "Dezembro" : 
+        {
+            "1" :
+            {
+                "0" : "Segunda rodada de paticipação. Clique aqui para acessar. \n",
+                "link" : "http://www.nomads.usp.br/bimnomads/phases/index.html"
+            },
+            "8" :
+            {
+                "1" : "Discussão dos resultados com o grupo com técnicos e gestores. \n"
+            },        
+            
+            "15" :
+            {
+                "2" : "Compilação e publicação dos resultados \n"
+            },      
+       
+            "22" :
+            {
+                "2" : "Análise dos resultados \n"
+            }
+        }
+    },
+    "2021" :{
+
+        "Janeiro" : 
+        {
+            "6" :
+            {
+                "0" : "Revisão das análises \n"
+            },
+            "13" :
+            {
+                "2" : "Publicação dos resultados \n"
+            }
+        }        
+    }
+}
+
+    
